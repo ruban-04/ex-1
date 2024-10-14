@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <!-- operators -->
+
+    <p id="car"></p>
+    <p id="bike"></p>
+    <p id="phone"></p>
+    <p id="labtop"></p>
+    <p id="fruit"></p>
+    <p id="vegetables"></p>
+
+    <script>
+        var kia = 1600000;
+        var hyundai = 12000000;
+        let total = kia + hyundai;
+        document.getElementById('car').innerHTML = "The total number is: " + total;
+
+        var ns = 20000;
+        var ktm = 15000;
+        let total1 = ns - ktm;
+        document.getElementById('bike').innerHTML = "The total number is: " + total1;
+
+        var ios = 67;
+        var android = 39;
+        let total2 = ios * android;
+        document.getElementById('phone').innerHTML = "The total number is: " + total2;
+
+        var dell = 7;
+        var hp = 63;
+        let total3 = dell / hp;
+        document.getElementById('labtop').innerHTML = "The total number is: " + total3;
+
+        var apple = 80;
+        var orange = 60;
+        let total4 = apple % orange;
+        document.getElementById('fruit').innerHTML = "The total number is: " + total4;
+
+        var vegetable1 = 5;
+        var vegetable2 = 2;
+        let result = vegetable1 ** vegetable2;
+        document.getElementById('vegetables').innerHTML = "The total number is: " + result;
+    </script>
+
+    <script src="index.js" defer></script>  
+</body>
+</html>
