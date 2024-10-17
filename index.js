@@ -212,3 +212,30 @@ console.log(not)
 
       var val= null;
       console.log(val)
+
+
+      function MyButton(event) {
+        event.preventDefault();
+      
+       const username = document.getElementById('Username').value;
+       const password = document.getElementById('Password').value;
+    
+        console.log("Username: ",username);
+        console.log("Password: ",password);
+    
+    
+    
+        // Datas
+
+        let dataText = `<h2>Data</h2>
+        <p><b>Username</b>:${username}</p>
+        <p><b>Password</b>:${password}</p>`;
+        let result = document.getElementById('result');
+        result.innerHTML = dataText; 
+        result.style.marginLeft = "25rem";
+        result.style.paddingTop = "2rem";
+    
+         
+         
+        
+    }
