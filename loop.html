@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>For loop</h1>
+<p id="demo"></p>
+
+<h1>For in</h1>
+<p id="forin"></p>
+
+<h1>For of</h1>
+<p id="forof"></p>
+
+<h1>While</h1>
+<p id="whil"></p>
+
+<h1>Break</h1>
+<p id="breaks"></p>
+
+<h1>Continues</h1>
+<p id="continues"></p>
+
+<h1>Destructuring</h1>
+<p id="destr"></p>
+    <script>
+const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+let text = "";
+for (let i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+
+const person = {fname:"John", lname:"Doe", age:25}; 
+
+let txt = "";
+for (let x in person) {
+  txt += person[x] + " ";
+}
+
+document.getElementById("forin").innerHTML = txt;
+
+
+let language = "JavaScript";
+
+let texts = "";
+for (let x of language) {
+  texts += x + "<br>";
+}
+
+document.getElementById("forof").innerHTML = texts;
+
+let whil = "";
+let i = 0;
+while (i < 10) {
+    whil += "<br>The number is " + i;
+  i++;
+}
+document.getElementById("whil").innerHTML = whil;
+
+
+let breaks = "";
+for (let i = 0; i < 10; i++) {
+  if (i === 3) { break; }
+  breaks += "The number is " + i + "<br>";
+}
+
+document.getElementById("breaks").innerHTML = breaks;
+
+
+let continues = "";
+for (let i = 0; i < 10; i++) {
+  if (i === 3) { continue; }
+  continues += "The number is " + i + "<br>";
+}
+document.getElementById("continues").innerHTML = continues;
+
+
+const fruits = ["Bananas", "Oranges", "Apples", "Mangos"];
+
+let [fruit1, fruit2] = fruits;
+
+document.getElementById("destr").innerHTML = fruit1 + " " + fruit2;
+    </script>
+</body>
+</html>
