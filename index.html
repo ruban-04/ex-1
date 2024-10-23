@@ -18,6 +18,9 @@ const bike = {type:"pulser",
             }
         //    document.getElementById('demo').innerHTML = "The bike type is " + bike.type +" "+ bike.model+" "+bike.color;
         // document.getElementById('demo').innerHTML=bike['type']
+      
+            // object  destructuring 
+             
         let{type,color}=bike;
         document.getElementById('vehicle').innerHTML=color+" "+ type;
     </script>
@@ -64,7 +67,7 @@ switch (month) {
   case 10:
     message = "November";
     break;
-  case 11:
+  default:
     message = "December";
     break;
 }
