@@ -235,8 +235,139 @@ console.log(not)
         result.innerHTML = dataText; 
         result.style.marginLeft = "25rem";
         result.style.paddingTop = "2rem";
-    
-         
-         
-        
     }
+
+    // bitwise operator
+
+    var a = 5;
+    var b = 1;
+
+    //  And&
+
+    let Add = a&b;
+    console.log(Add);
+
+    // or |
+
+        let orop=a|b;
+    console.log(orop);
+
+    // Xor ^
+
+      let xorop=a^b;
+    console.log(xorop);
+
+    // not ~
+
+    let not1 = ~ (6>2);
+    console.log(not1);
+
+    // left shift <<
+
+    let left=a<<b;
+    console.log(left);
+
+    // right shift >>
+
+    let right=a>>b;
+    console.log(right);
+
+   //    Zero fill right shift  >>>
+
+   let zero=a>>>b;
+    console.log(zero);
+  
+    // array values
+
+    let foods1 = ["idly", "dosa", "chapaththi"];
+    console.log(foods1[1]);
+
+    // array length
+
+    let foods2 = ["idly", "dosa", "chapaththi"];
+   console.log(foods2.length);
+
+   // array reverse
+
+   let foods3 = ["idly", "dosa", "chapaththi"];
+   foods3.reverse();
+   console.log(foods3); 
+
+   // array sort 
+   
+   let foods4 = ["idly", "dosa", "chapaththi"];
+   foods4.sort();
+   console.log(foods4);
+
+  // array at
+  
+  let foods5 = ["idly", "dosa", "chapaththi"];
+  console.log(foods5.at(1));
+
+ //  array fill
+
+  let foods6 = ["idly", "dosa", "chapaththi"];
+  foods6.fill("parotta",1,3);
+  console.log(foods6);
+
+//  array from
+
+  let str = "Ruban";
+  let Myname = Array.from(str);
+  console.log(Myname);
+
+//   array join
+
+let foods7 = ["idly", "dosa", "chapaththi"];
+let  dish= foods7.join(".");
+console.log( dish);
+
+// array toString
+
+let no = 123;
+let noString = no.toString();
+console.log(noString); 
+
+// array pop
+
+let foods8 = ["idly", "dosa", "chapaththi"];
+let lastfood = foods8.pop(); 
+console.log(foods8);
+
+// forEach
+
+let foods9 = ["idly", "dosa", "chapaththi"];
+foods9.forEach(function (food) {
+console.log(food);
+});
+
+// array shift
+
+let foods10 = ["idly", "dosa", "chapaththi"];
+let firstfood = foods10.shift(); 
+console.log(foods10);
+
+// array push
+
+let food11 = ["idly", "dosa", "chapaththi"];
+let  food1=food11.push("pongal"); 
+console.log(food11);  
+
+// array unShift
+
+let foods12 = ["idly", "dosa", "chapaththi"];
+let food =foods12.unshift("pongal"); 
+console.log(foods12); 
+    
+
+ 
+
+
+
+
+    
+
+
+
+
+    
