@@ -359,15 +359,130 @@ let foods12 = ["idly", "dosa", "chapaththi"];
 let food =foods12.unshift("pongal"); 
 console.log(foods12); 
     
+// array concat
 
- 
+let breakfast1 = ["idly","dosa","chapaththi"]
+let breakfast2 = ["poori","pongal","vadai"]
+let breakfastresult = breakfast1.concat(breakfast2);
+console.log(breakfastresult)
 
+//  Array copyWithIn
 
+ let arrnum = [1, 2, 3, 4, 5, 6];
+ arrnum.copyWithin(2,4);
+ console.log(arrnum);
 
+//  some
 
+let numbers = [1, 2, 3, 4, 5];
+let someresult = numbers.some(num => num > 3);
+console.log(someresult); 
     
+// splice
+
+let food13 =  ["idly", "dosa", "chapaththi"];
+food13.splice(0, 2); 
+console.log(food13); 
+
+// flat
+
+let flatnum = [1, 2, [3, 4],[5, 6]];
+let ans1 = flatnum.flat();
+console.log(ans1);
 
 
+// lastIndexOf
 
+let lastnum = [1, 2, 3, 2, 4, 2];
+let  ans2= lastnum.lastIndexOf(2);
+console.log(ans2); 
 
-    
+ // array of
+
+let array = Array.of(1, 2, 3); 
+console.log(array);
+
+// array every
+
+let everynum = [2, 4, 6, 8];
+let ans3 =  everynum.every(num => num % 2 === 0);
+console.log(ans3); 
+
+// array slice
+
+let foods14 =  ["idly", "dosa", "chapaththi"];
+let slice = foods14.slice(1, 3);
+console.log(slice);
+
+// flatMap
+
+// let mapnum = [1, 2, 3];
+// let map = mapnum.flatMap(num => [num, num * 2]);
+// console.log(map); 
+
+// findIndex
+
+let find1 = [10, 20, 30, 40];
+let ans4 = find1.findIndex(num => num > 25);
+console.log(ans4); 
+
+// find
+
+let find2 = [10, 20, 30, 40];
+let ans5 = find2.find(num => num > 25);
+console.log(ans5);
+
+// includes
+
+let include =  ["idly", "dosa", "chapaththi"];
+let ans6 = include.includes('chapaththi');
+console.log(ans6 );
+
+// entries
+
+let foods15  =  ["idly", "dosa", "chapaththi"];
+let iterator = foods15 .entries();
+
+for (let [index, value] of iterator) {
+    console.log(index, value);
+}
+
+// reduceRight
+
+let reduceRight = [1, 2, 3, 4];
+let ans7 = reduceRight.reduceRight((acc, num) => acc + num, 0);
+console.log(ans7);
+
+// reduce
+
+let reduce = [1, 2, 3, 4];
+let ans8 = reduce.reduce((acc, num) => acc + num, 0);
+console.log(ans8); 
+
+// isArray
+
+let food16 = ["idly", "dosa", "chapaththi"];
+let ans9 = Array.isArray(food16);
+console.log(ans9);
+
+// filter
+
+let filter = [1, 2, 3, 4, 5];
+let ans10 = filter.filter(num => num > 3);
+console.log(ans10);
+
+// keys
+
+let keys = ["idly", "dosa", "chapaththi"];
+let food17 = keys.keys();
+
+for (let key of food17) {
+    console.log(key);
+}
+
+// map
+
+let map = [1, 2, 3, 4];
+let ans11 = map.map(num => num * 2);
+console.log(ans11); 
+
