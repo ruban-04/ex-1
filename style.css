@@ -41,3 +41,24 @@ h1{
     cursor: pointer;
     margin-left: 120px;       
    }
+
+   
+#print-table{
+    display: flex;
+    justify-content: center;
+    color: rgb(25, 20, 12);
+  
+  }
+  table,td,tr,th{
+    border: 2px solid rgb(31, 30, 30);
+    border-collapse: collapse;
+    padding: 1rem ;
+      background-color:whitesmoke;
+  }
+  th{
+    padding: 1rem 3rem;
+
+  }
+  td{
+    text-align: center;
+  }
