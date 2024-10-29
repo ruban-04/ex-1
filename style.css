@@ -52,8 +52,9 @@ h1{
   table,td,tr,th{
     border: 2px solid rgb(31, 30, 30);
     border-collapse: collapse;
-    padding: 1rem ;
-      background-color:whitesmoke;
+    padding:1rem 7rem;
+    background-color:whitesmoke;
+      
   }
   th{
     padding: 1rem 3rem;
